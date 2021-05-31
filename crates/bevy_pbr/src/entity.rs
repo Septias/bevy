@@ -11,7 +11,7 @@ use bevy_render::{
 use bevy_transform::prelude::{GlobalTransform, Transform};
 
 /// A component bundle for "pbr mesh" entities
-#[derive(Bundle)]
+#[derive(Bundle, Clone)]
 pub struct PbrBundle {
     pub mesh: Handle<Mesh>,
     pub material: Handle<StandardMaterial>,
